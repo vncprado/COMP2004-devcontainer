@@ -1,0 +1,23 @@
+{
+  "name": "COMP2003 DevContainer",
+  "image": "vncprado/comp2003:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        // "ms-azuretools.vscode-docker",
+        "mshr-h.veriloghdl",
+        "wavetrace.wavetrace",
+        "ms-python.python",
+				"ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "forwardPorts": [11311],
+  "postCreateCommand": "sudo chown vscode:vscode /workspaces -R",
+  "runArgs": ["--memory=512m", "--cpus=1", "--net=host"],
+  // "runArgs": ["--net=host"],
+  "remoteUser": "vscode"
+}
