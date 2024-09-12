@@ -2,7 +2,7 @@
 
 int main(int argc, char **argv) {
 
-    if (argc<2) {
+    if (argc<3) {
         printf("We need at least two parameter\n"); // feedback to the user
         return 0; // end execution, no enough parameters
     }

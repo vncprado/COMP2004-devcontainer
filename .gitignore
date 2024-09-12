@@ -1,3 +1,7 @@
+# Sandbox contents
+sandbox/*.c
+sandbox/*.out
+
 # Prerequisites
 *.d
 
